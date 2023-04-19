@@ -1,0 +1,362 @@
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    background: #97c8f7;
+    opacity: .9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-encriptar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 63%;
+    height: 92vh;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.palabra{
+    position: absolute;
+    top: 100px;
+    width: 98%;
+    height: 62vh;
+    resize: none;
+    border: none;
+    background: rgba(0, 3, 178, 0.0);
+    text-align: center;
+    padding-top: 20%;
+    font-size: 20px;
+    margin-bottom:1rem;
+    box-shadow: none;
+    outline:none;
+    border:0;
+}
+
+.palabra:focus{
+    border: #6fb4f5;
+}
+
+.contenedor-botones{
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    height: 20%;
+    margin: 5px 5px 5px 5px;
+}
+
+.label-minusculas{
+    position: absolute;
+    bottom: 90px;
+    left: 20%;
+}
+
+.btn-encriptar{
+    position: absolute;
+    bottom: 40px;
+    left: 18%;
+    width: 20%;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(49, 22, 122);
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.btn-encriptar:hover{
+    background: rgb(152, 111, 247);
+    transform: scale(1.2);/**hace mas grande*/
+     /*rotate(70deg);/*grados se pone en la misma linea para hacer 2 efectos*/
+}
+
+.btn-desencriptar{
+    position: absolute;
+    bottom: 40px;
+    left: 58%;
+    width: 20%;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(96, 43, 241);
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.btn-desencriptar:hover{
+    background: rgb(58, 41, 248);
+    transform: scale(1.2);/**hace mas grande*/
+     /*rotate(70deg);/*grados se pone en la misma linea para hacer 2 efectos*/
+}
+
+.contenedor-lateral{
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 92vh;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contenedor-lateral img{    
+    width: 90%;
+    height: 250px;
+    max-width: 400px;
+}
+
+.label-palabra{
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    font-size: 26px;
+    margin-right: 40px;
+    max-width: 78%;
+}
+
+.label-alerta2{
+    position: absolute;
+    left: 20%;
+    bottom:  25%;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.contenedor-copiar{
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    height: 20%;
+    margin: 5px 5px 5px 5px;
+}
+
+.btn-copiar{
+    position: absolute;
+    bottom: 40px;
+    left: 30%;
+    width: 25%;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(49, 22, 122);
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.btn-copiar:hover{
+    background: rgb(152, 111, 247);
+    transform: scale(1.2);/**hace mas grande*/
+     /*rotate(70deg);/*grados se pone en la misma linea para hacer 2 efectos*/
+}
+
+footer{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width:480px) {
+
+    header{
+        height: 50px;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    header img{
+        width: 45px;
+        height: 45px;
+    }
+
+    body{
+        height: 800px;
+        width: 100%;
+    }
+
+    main{
+        height: 740px;
+        width: 100%;
+    }
+
+    .contenedor-encriptar{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 380px;
+        margin: 0;
+        /*text-align:justify;*/
+    }
+
+    .palabra{
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 98%;
+        height: 180px;
+        resize: none;
+        border: none;
+        background: rgba(0, 3, 178, 0.0);
+        text-align: center;
+        padding-top: 10%;
+        font-size: 18px;
+        margin-bottom:1rem;
+        box-shadow: none;
+        outline:none;
+        border:0;
+    }
+    
+   
+    
+    .contenedor-botones{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 98%;
+        height: 150px;
+        margin: 5px 5px 5px 5px;
+    }
+    
+    .label-minusculas{
+        position: absolute;
+        left: 22px;
+        top: 12px;
+        width: 90%;
+        height: 10px;
+        font-size: 14px;
+    }
+    
+    .btn-encriptar{
+        position: absolute;
+        left: 20px;
+        bottom: 70px;
+        width: 90%;
+        padding: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: rgb(49, 22, 122);
+        border: none;
+        border-radius: 15px;
+        transition: 1s all;
+        cursor: pointer;
+        min-width: 12px;
+    }
+    
+    .btn-encriptar:hover{
+        background: rgb(152, 111, 247);
+        transform: scale(1.1);/**hace mas grande*/
+         /*rotate(70deg);/*grados se pone en la misma linea para hacer 2 efectos*/
+    }
+    
+    .btn-desencriptar{
+        position: absolute;
+        left: 20px;
+        bottom: 12px;
+        width: 90%;
+        padding: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: rgb(96, 43, 241);
+        border: none;
+        border-radius: 15px;
+        transition: 1s all;
+        cursor: pointer;
+        min-width: 12px;
+    }
+
+    .btn-desencriptar:hover{
+        background: rgb(152, 111, 247);
+        transform: scale(1.1);/**hace mas grande*/
+         /*rotate(70deg);/*grados se pone en la misma linea para hacer 2 efectos*/
+    }
+    
+
+    .contenedor-lateral{
+        position:relative;
+        display: inline-block;
+        width: 97%;
+        height: 36vh;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+    }
+
+    .contenedor-lateral img{    
+        width: 2px;
+        height: 2px;
+        max-width: 4px;
+        visibility: hidden;
+    }
+
+    .label-palabra{
+        position:initial;
+        display: inline-block;
+        top:30px;
+        font-size: 18px;
+        max-width: 78%;
+        margin: 0;
+        padding: 0;        
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 25px;
+    }
+    
+    .label-alerta2{
+        position:initial;
+        display: inline-block;
+        bottom: 110px;
+        left: 0;
+        display: block;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        margin-top: 35px;
+    }    
+
+    .contenedor-copiar{
+        position:absolute;
+        bottom: 10px;
+        width: 98%;
+        height: 60px;
+        margin: 5px 5px 5px 5px;
+        margin-top: 15px;
+    }
+    
+.btn-copiar:hover{
+    background: rgb(152, 111, 247);
+    transform: scale(1.1);/**hace mas grande*/
+     /*rotate(70deg);/*grados se pone en la misma linea para hacer 2 efectos*/
+}
+
+    footer{
+        margin-top: 35px;
+        padding-top: 20px;
+    }
+    footer p{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
